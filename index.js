@@ -22,7 +22,7 @@ const server = http.createServer((req, res) => {
 
     if(req.url == "/")
     {
-        requests(" https://api.openweathermap.org/data/2.5/weather?q=Bangalore&appid=1bac5e7065da81cdbeb8749e2c68ff78 ")
+        requests(" API-KEY ")
         .on("data",(chunk) => {
             const objdata = JSON.parse(chunk);
             const arrData = [objdata];
